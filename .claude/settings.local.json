@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell \"Get-ChildItem -Path ''E:\\synth-apply\\src\\components\\onboarding\\'' -Name\")",
+      "Bash(python -m py_compile:*)",
+      "Bash(npm run build)",
+      "Bash(git push:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

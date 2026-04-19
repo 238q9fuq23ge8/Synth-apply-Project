@@ -1,0 +1,318 @@
+/* =============================================
+   AI JOB ASSISTANT — Readable Global Theme
+   Modern glass + gradient aesthetic
+   ============================================= */
+
+:root {
+  /* --- Core Brand Colors --- */
+  --indigo-600: #4f46e5;
+  --indigo-500: #6366f1;
+  --violet-600: #7c3aed;
+  --violet-500: #8b5cf6;
+  --violet-400: #a78bfa;
+  --fuchsia-600: #c026d3;
+  --fuchsia-500: #e879f9;
+  --emerald-500: #10b981;
+
+  /* --- Neutral Palette --- */
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-700: #374151;
+  --slate-700: #334155;
+  --slate-900: #0f172a;
+
+  /* --- Background Gradients --- */
+  --bg-gradient: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #faf5ff 50%,
+    #f6f0ff 100%
+  );
+  --accent-gradient: linear-gradient(
+    135deg,
+    var(--indigo-600),
+    var(--fuchsia-600)
+  );
+
+  /* --- Glass Effects --- */
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(139, 92, 246, 0.25);
+  --glass-shadow: 0 8px 24px rgba(124, 58, 237, 0.12);
+
+  /* --- Text Colors --- */
+  --text-primary: #2d1b69;
+  --text-secondary: #5b21b6;
+  --text-light: #7e22ce;
+
+  /* --- Font --- */
+  --font-sans: "Inter", "Poppins", sans-serif;
+}
+.green{
+  color: #4caf50;
+}
+.text-nav{
+  color: #2d1b69;
+}
+/* === Base Layout === */
+body {
+  background: var(--bg-gradient);
+  font-family: var(--font-sans);
+  color: var(--text-primary);
+}
+
+/* === Gradient Background (Page) === */
+.bg-landing {
+  background:
+    radial-gradient(1200px 600px at 15% -10%, rgba(79, 70, 229, 0.15), transparent 60%),
+    radial-gradient(1000px 500px at 85% 5%, rgba(192, 38, 211, 0.12), transparent 60%),
+    var(--bg-gradient);
+}
+
+/* === Glass Containers === */
+.card-glass {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: var(--glass-shadow);
+  color: var(--text-primary);
+}
+
+/* === Primary Gradient Button === */
+.btn-hero {
+  background: rgb(79 70 229) !important;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.6rem;
+  padding: 0.6rem 1rem;
+  box-shadow: 0 8px 18px rgba(99, 102, 241, 0.25);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.btn-hero:hover {
+  opacity: 0.95;
+  transform: translateY(-1px);
+}
+.hafsa:hover{
+  opacity: 0.95;
+  transform: translateY(-1px);
+  background: rgb(79 70 229) !important;
+  color: #fff;
+
+}
+/* === Secondary Buttons === */
+button {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+/* === Input Fields === */
+input.ring-soft,
+textarea.ring-soft {
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  border-radius: 0.5rem;
+  padding: 0.6rem 0.75rem;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+input.ring-soft:focus,
+textarea.ring-soft:focus {
+  border-color: var(--violet-500);
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.2);
+  outline: none;
+}
+
+/* === Tags & Badges === */
+.badge-soft {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.7rem;
+  font-size: 0.75rem;
+  color: var(--violet-600);
+  background: #f3e8ff;
+  border: 1px solid #e9d5ff;
+  border-radius: 9999px;
+}
+.tag-skill {
+  display: inline-block;
+  padding: 0.3rem 0.55rem;
+  font-size: 0.75rem;
+  color: var(--violet-600);
+  background: #f5f3ff;
+  border: 1px solid #e9d5ff;
+  border-radius: 9999px;
+}
+.subtitle {
+  color: var(--text-secondary) !important;
+}
+/* === Headings === */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+h2 {
+  font-size: 1.25rem;
+}
+
+/* === Utility Enhancements === */
+a {
+  color: var(--violet-600);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--fuchsia-600);
+}
+
+/* === Scrollbar === */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 9999px;
+} 
+::-webkit-scrollbar-track {
+  background: transparent;
+} 
+
+/* ---------- Status header (Plan / Trial / Credits) ---------- */
+.status-wrap {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: 1fr;
+  padding: 16px;
+  border-radius: 18px;
+  background:
+    radial-gradient(120% 140% at 0% 0%, rgba(99,102,241,0.10), transparent 60%),
+    radial-gradient(120% 120% at 100% 100%, rgba(192,38,211,0.10), transparent 55%),
+    rgba(255,255,255,0.88);
+  border: 1px solid rgba(124,58,237,0.22);
+  box-shadow: 0 10px 28px rgba(124,58,237,0.16);
+}
+@media (min-width: 640px){
+  .status-wrap { grid-template-columns: 1.1fr .9fr .9fr; padding: 20px; }
+}
+
+.status-card {
+  display: flex; align-items: center; gap: 14px;
+  padding: 14px 16px; border-radius: 14px;
+  background: white; border: 1px solid rgba(124,58,237,0.18);
+}
+.status-card h4 {
+  margin: 0; font-size: 14px; font-weight: 700; color: #5b21b6; /* --text-secondary */
+  letter-spacing: .2px;
+}
+.status-value {
+  font-size: 20px; font-weight: 800; color: #2d1b69; /* --text-primary */
+}
+.status-badge {
+  display:inline-flex; align-items:center; gap:6px;
+  border:1px solid rgba(99,102,241,.25);
+  background:rgba(99,102,241,.08);
+  color:#4F46E5; padding:.25rem .55rem; border-radius:999px; font-size:.72rem; font-weight:600;
+}
+
+/* progress line (credits) */
+.progress {
+  width: 100%; height: 8px; border-radius: 999px;
+  background: rgba(124,58,237,0.12);
+  overflow: hidden; margin-top: 6px;
+}
+.progress > span {
+  display:block; height:100%; border-radius:999px;
+  background: linear-gradient(90deg,#4F46E5,#C026D3);
+  transition: width .35s ease;
+}
+
+/* countdown pill */
+.countdown {
+  display:inline-flex; align-items:center; gap:8px;
+  padding:.35rem .7rem; border-radius:999px; font-weight:700;
+  color:#7e22ce; background:rgba(192,38,211,.08); border:1px solid rgba(192,38,211,.25);
+  font-size:.85rem;
+}
+
+/* helper */
+.kicker { color:#64748B; font-size:.85rem; }
+
+/* Add these animations to your global CSS file (App.css or index.css) */
+
+/* Animated blob animation for background */
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+/* Smooth transitions */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Custom scrollbar for modern look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+.celebration-overlay {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  color: #4caf50;
+  z-index: 9999;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  text-align: center;
+  animation: fadeInOut 5s ease forwards;
+}
+
+@keyframes fadeInOut {
+  0%, 80% { opacity: 0; }
+  10%, 70% { opacity: 1; }
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #667eea, #764ba2);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #667eea, #8b5cf6);
+}
